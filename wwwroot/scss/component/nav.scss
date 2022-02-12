@@ -1,0 +1,75 @@
+        @import "../core/variable.scss";
+        .nav {
+            $self: &;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            height: 150px;
+            background: $color-secondary;
+            padding: 0 3%;
+            &__active {
+                transition: 300ms;
+                background: #fff;
+            }
+            &__bar {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 32px 0;
+            }
+            &__menu {
+                flex-basis: 100%;
+                list-style: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                display: none;
+                padding-bottom: 16px;
+            }
+            &__item {
+                padding: 22px 0;
+                text-align: center;
+            }
+            &__link {
+                position: relative;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: $color-primary;
+                letter-spacing: 0.2em;
+            }
+            &__icon {
+                height: 20px;
+            }
+            &__active-link {
+                font-weight: bold;
+            }
+            &__brand {
+                height: 50px;
+            }
+            &__close {
+                display: none;
+            }
+            @media(min-width: $breakpoint-laptop) {
+                &__bar {
+                    justify-content: space-between;
+                }
+                &__menu {
+                    display: flex;
+                    flex-direction: row;
+                    flex-basis: initial;
+                    max-height: 500px;
+                    padding-bottom: 0;
+                }
+                &__hamb,
+                &__close {
+                    display: none;
+                }
+                &__item {
+                    padding-left: 64px;
+                }
+            }
+        }

@@ -1,0 +1,53 @@
+@import "../core/variable.scss";
+@import "../base/heading.scss";
+.card-h {
+    $self: &;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: $breakpoint-laptop) {
+        grid-template-columns: 1fr 1fr;
+    }
+    &__header {
+        order: 0;
+        min-height: 250px;
+    }
+    &__body {
+        order: 1;
+    }
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    &__title {
+        @extend .heading;
+        @extend .heading--title;
+    }
+    &__text {
+        margin-bottom: 3rem;
+    }
+    &--big-space {
+        grid-gap: 16px 128px;
+    }
+    &--2v3 {
+        @media (min-width: $breakpoint-laptop) {
+            grid-template-columns: 2fr 3fr;
+        }
+    }
+    &--3v2 {
+        @media (min-width: $breakpoint-laptop) {
+            grid-template-columns: 3fr 2fr;
+        }
+    }
+    &--rev {
+        @media (min-width: $breakpoint-laptop) {
+            #{$self}__header {
+                order: 1;
+            }
+            #{$self}__body {
+                order: 0;
+            }
+        }
+    }
+}

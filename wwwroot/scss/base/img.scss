@@ -1,0 +1,16 @@
+@import "../core/variable.scss";
+.img {
+    width: 100%;
+    max-width: 500px;
+    &--shadow {
+        box-shadow: 0 20px 50px #888;
+    }
+    &--bw {
+        filter: grayscale(100);
+    }
+    &--cover {
+        width: none;
+        max-width: none;
+        object-fit: cover;
+    }
+}

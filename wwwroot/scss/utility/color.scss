@@ -1,0 +1,6 @@
+@import "../core/variable.scss";
+.color {
+    &--white {
+        color: $color-white !important;
+    }
+}

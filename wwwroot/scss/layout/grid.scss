@@ -1,0 +1,24 @@
+@import "../core/variable.scss";
+.grid {
+    width: 100%;
+    display: grid;
+    position: relative;
+    grid-gap: 5rem 16px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    &--12 {
+        grid-template-columns: 1fr;
+        @media(min-width: $breakpoint-tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &--123 {
+        grid-template-columns: 1fr;
+        @media(min-width: $breakpoint-tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(min-width: $breakpoint-desktop) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

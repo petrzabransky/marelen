@@ -1,0 +1,24 @@
+@import "../core/variable.scss";
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    &__header {
+        margin-bottom: 32px;
+    }
+    &__body {
+        flex: 1 1 auto;
+        margin-bottom: 32px;
+    }
+    &__img {
+        margin-bottom: 1rem;
+    }
+    &__display {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+}

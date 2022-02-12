@@ -1,0 +1,1 @@
+.bg{position:absolute;top:0;left:0;z-index:-999}.bg--center{top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}.bg--rect{background:#f1efe7;width:50%;height:100%;top:0;-webkit-transform:translate(-50%, 100px);transform:translate(-50%, 100px)}

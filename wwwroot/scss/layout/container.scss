@@ -1,0 +1,25 @@
+@import "../core/variable.scss";
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: $container-desktop;
+}
+
+.container-half {
+    width: 90%;
+    max-width: $container-desktop/2;
+    padding: 32px;
+    @media (min-width: $breakpoint-laptop) {
+        padding: 64px;
+    }
+    &--left {
+        margin-left: auto;
+        margin-right: 0;
+        padding-left: 0;
+    }
+    &--right {
+        margin-left: 0;
+        margin-right: auto;
+        padding-right: 0;
+    }
+}

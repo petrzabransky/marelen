@@ -1,0 +1,59 @@
+@import "../core/variable.scss";
+.footer {
+    width: 100%;
+    background: $color-light;
+    &__banner {
+        height: 150px;
+        width: 100%;
+        background: url(/img/hoblina.jpg) no-repeat center bottom;
+        background-size: cover;
+    }
+    &__body {
+        background: $color-black-dark;
+        color: $color-light;
+        padding: 3rem 0;
+    }
+    &__design {
+        background: $color-dark;
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-link {
+            font-size: 0.8rem;
+            text-align: center;
+            color: $color-black-dark;
+        }
+    }
+    &__item {
+        display: flex;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 12px;
+        color: $color-medium;
+        letter-spacing: 0.2em;
+        margin-bottom: 1.5em;
+    }
+    &__brand {
+        height: 50px;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__phone {
+        display: block;
+        text-align: left;
+        font-size: 20px;
+        color: $color-medium;
+        margin-bottom: 2em;
+    }
+    &__icon {
+        height: 14px;
+        display: inline-block;
+        margin: 0 16px 0 0;
+    }
+}

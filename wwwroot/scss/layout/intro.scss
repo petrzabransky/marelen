@@ -1,0 +1,39 @@
+@import "../core/variable.scss";
+.intro {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 150px);
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/img/hoblina.jpg) no-repeat center bottom;
+    background-size: cover;
+    text-align: center;
+    &__title {
+        font-size: 3rem;
+        font-weight: normal;
+        margin-bottom: 1rem;
+        @media(min-width: $breakpoint-laptop) {
+            font-size: 5rem;
+        }
+    }
+    &__subtitle {
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 0;
+        letter-spacing: 0.5em;
+        @media(min-width: $breakpoint-laptop) {
+            font-size: 1.5rem;
+        }
+    }
+    &__img {
+        // filter: grayscale(100);
+        mix-blend-mode: luminosity;
+        width: 100%;
+    }
+    &__picture {
+        background: $color-secondary;
+        margin-bottom: 5rem;
+    }
+}
