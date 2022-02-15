@@ -12,6 +12,12 @@
             grid-template-columns: 1fr 1fr;
         }
     }
+    &--13 {
+        grid-template-columns: 1fr;
+        @media(min-width: $breakpoint-tablet) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
     &--123 {
         grid-template-columns: 1fr;
         @media(min-width: $breakpoint-tablet) {
