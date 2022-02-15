@@ -31,6 +31,7 @@
         font-size: 70px;
         font-weight: normal;
         margin-bottom: 1rem;
+        transform: translateX(0.25em);
         @media(min-width: $breakpoint-laptop) {
             font-size: 5rem;
         }
@@ -41,6 +42,7 @@
         font-weight: normal;
         margin-bottom: 60px;
         letter-spacing: 0.5em;
+        transform: translateX(0.25em);
         @media(min-width: $breakpoint-laptop) {
             font-size: 1.5rem;
         }
