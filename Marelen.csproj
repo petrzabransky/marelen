@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\style.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\img\sluzba\detail\" />
     <Folder Include="wwwroot\js\" />
   </ItemGroup>

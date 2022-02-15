@@ -1,0 +1,24 @@
+@import "../core/variable.scss";
+.about {
+    &__panel {
+        background: $color-secondary;
+        padding-top: 10rem;
+        padding-bottom: 8rem;
+    }
+    &__logo {
+        position: relative;
+        width: 55px;
+        margin: 0 auto;
+    }
+    &__img {
+        transform: translateY(80px);
+    }
+    &__text {
+        color: $color-primary;
+        opacity: 0.8;
+        margin-bottom: 5rem;
+    }
+    &__title {
+        margin-bottom: 5rem;
+    }
+}

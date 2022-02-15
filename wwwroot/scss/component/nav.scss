@@ -10,7 +10,7 @@
             padding: 0 3%;
             &__active {
                 transition: 300ms;
-                background: #fff;
+                background: $color-secondary;
             }
             &__bar {
                 display: flex;
@@ -48,7 +48,7 @@
                 font-weight: bold;
             }
             &__brand {
-                height: 50px;
+                height: 18px;
             }
             &__close {
                 display: none;

@@ -28,7 +28,7 @@
         margin-bottom: 3rem;
     }
     &--big-space {
-        grid-gap: 16px 128px;
+        grid-gap: 64px 128px;
     }
     &--2v3 {
         @media (min-width: $breakpoint-laptop) {

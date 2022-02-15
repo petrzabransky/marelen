@@ -6,19 +6,13 @@
     line-height: 1.4;
     color: $color-primary;
     text-transform: uppercase;
+    margin-bottom: 1em;
+    letter-spacing: 0.5em;
+    color: $color-primary;
     &--display {
         font-size: 3rem;
         margin-bottom: 3rem;
         color: $color-medium;
-        &::before {
-            content: "";
-            width: 80px;
-            height: 3px;
-            position: absolute;
-            top: -3rem;
-            left: 0;
-            background: $color-primary;
-        }
         @media(min-width: $breakpoint-tablet) {
             font-size: 5rem;
             margin-bottom: 5rem;
@@ -26,14 +20,17 @@
     }
     &--header {
         position: relative;
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
+        font-size: 2.3rem;
+        margin-bottom: 3em;
+        letter-spacing: 0.2em;
     }
     &--title {
         font-size: 1.2rem;
         margin-bottom: 1rem;
+        letter-spacing: 0.1em;
     }
     &--subtitle {
+        letter-spacing: 0;
         font-size: 1rem;
         margin-bottom: 1rem;
         color: $color-dark;

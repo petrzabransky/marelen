@@ -13,4 +13,7 @@
         max-width: none;
         object-fit: cover;
     }
+    &--sepia {
+        filter: hue-rotate(30deg);
+    }
 }

@@ -1,0 +1,15 @@
+@import "../core/variable.scss";
+.sepia {
+    background: $color-secondary;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.144);
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        mix-blend-mode: luminosity;
+    }
+    &--title {
+        box-shadow: none;
+    }
+}
