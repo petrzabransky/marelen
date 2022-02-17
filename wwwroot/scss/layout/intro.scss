@@ -1,9 +1,10 @@
 @import "../core/variable.scss";
 @import "../base/heading.scss";
+
 .intro {
     position: relative;
     width: 100vw;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     min-height: 600px;
     display: flex;
     flex-direction: column;
@@ -11,31 +12,36 @@
     background: url(/img/hoblina.jpg) no-repeat center bottom;
     background-size: cover;
     text-align: center;
+
     &__top {
         height: 250px;
         width: 100%;
         background: $color-secondary;
     }
+
     &__panel {
-        transform: translateY(-150px);
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     &__picture {
         width: 453px;
         margin-bottom: 120px;
     }
+
     &__title {
         @extend .heading;
         font-size: 70px;
         font-weight: normal;
         margin-bottom: 1rem;
         transform: translateX(0.25em);
+
         @media(min-width: $breakpoint-laptop) {
             font-size: 5rem;
         }
     }
+
     &__subtitle {
         @extend .heading;
         font-size: 20px;
@@ -43,6 +49,7 @@
         margin-bottom: 60px;
         letter-spacing: 0.5em;
         transform: translateX(0.25em);
+
         @media(min-width: $breakpoint-laptop) {
             font-size: 1.5rem;
         }

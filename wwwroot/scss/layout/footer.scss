@@ -9,8 +9,7 @@
     &__item {
         display: flex;
     }
-    &__link {
-        display: flex;
+    &__link {       
         text-transform: uppercase;
         text-align: left;
         font-size: 13px;
@@ -21,7 +20,11 @@
     &__brand {
         @extend .heading;
         @extend .heading--title;
-        color: $color-dark;
+        font-size: 0.8rem;
+        color: $color-primary;
+        &:hover {
+            opacity: 0.5;
+        }
     }
     &__icon {
         height: 18px;

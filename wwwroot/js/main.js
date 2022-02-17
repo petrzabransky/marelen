@@ -1,7 +1,6 @@
 window.onload = function() {
     smoothScroll();
     navMenu();
-    gallery();
 }
 
 // Smooth scrool
@@ -24,38 +23,16 @@ function smoothScroll() {
 // Navigation menu collapse
 function navMenu() {
     const hamb = document.querySelector(".nav__hamb");
-    const menu = document.querySelector(".nav__menu");
     const close = document.querySelector(".nav__close");
-    const nav = document.querySelector(".nav");
+    const menu = document.querySelector(".nav__menu");
 
     hamb.addEventListener("click", function() {
-        menu.style.display = "flex";
-        hamb.style.display = "none";
-        close.style.display = "block";
-        nav.classList.add("nav__active");
-
+        if (menu.classList.contains("nav__menu--active")) {
+            menu.classList.remove("nav__menu--active");
+            hamb.src = "/img/ikona/hamburger.svg";
+        } else {
+            menu.classList.add("nav__menu--active");
+            hamb.src = "/img/ikona/zavrit.svg";
+        }
     });
-
-    close.addEventListener("click", function() {
-        menu.style.display = "none";
-        hamb.style.display = "block";
-        close.style.display = "none";
-        nav.classList.remove("nav__active");
-
-    });
-}
-
-// Gallery portfolio image
-function gallery() {
-    const subImg = document.getElementsByClassName("gallery__small");
-
-    for (let i = 0; i < subImg.length; i++) {
-        subImg[i].addEventListener("mouseover", fullImg);
-    }
-
-    function fullImg() {
-        const imgSrc = this.getAttribute("src");
-        const imgTar = this.parentNode.parentNode.getElementsByClassName("gallery__big")[0];
-        imgTar.src = imgSrc;
-    }
 }

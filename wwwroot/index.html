@@ -1,187 +1,43 @@
 <!DOCTYPE html>
-<html lang="cs-cz">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.min.css">
+    <title>Document</title>
 </head>
 
 <body>
     <header id="header" class="header">
         <nav class="nav">
-            <div class="nav__bar">
-                <a href="/index.html">
-                    <img src="/img/logo.svg" alt="logo" class="nav__brand">
-                </a>
+            <div class="container">
+                <div class="nav__bar">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="/img/logo.svg" alt="logo" class="nav__brand">
+                    </a>
 
-                <img class="nav__hamb nav__icon" src="/img/ikona/hamburger.svg" alt="hamburger menu">
-                <img class="nav__close nav__icon" src="/img/ikona/zavrit.svg" alt="zavřít menu">
+                    <img class="nav__hamb nav__icon" src="/img/ikona/hamburger.svg" alt="hamburger menu">
 
-                <ul class="nav__menu">
-                    <li class="nav__item"><a href="/Index.html" class="nav__link">home</a></li>
-                    <li class="nav__item"><a href="/Sluzby.html" class="nav__link">služby</a></li>
-                    <li class="nav__item"><a href="/Cenik.html" class="nav__link">ceník</a></li>
-                    <li class="nav__item"><a href="/Kontakt.html" class="nav__link">kontakt</a></li>
-                </ul>
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a asp-area="" asp-controller="Home" asp-action="Index" class="nav__link">home</a></li>
+                        <li class="nav__item"><a asp-area="" asp-controller="Home" asp-action="Sluzby" class="nav__link">služby</a></li>
+                        <li class="nav__item"><a asp-area="" asp-controller="Home" asp-action="Cenik" class="nav__link">ceník</a></li>
+                        <li class="nav__item"><a asp-area="" asp-controller="Home" asp-action="Kontakt" class="nav__link">kontakt</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-
     <main class="main">
-
-        <section class="intro" id="intro">
-            <div class="intro__top"></div>
-            <div class="intro__panel">
-                <div class="intro__picture">
-
-                    <div class="sepia sepia--title">
-                        <img class="sepia__img" src="/img/marelen.jpg" alt="kosmetický salon marelen">
-                    </div>
-                </div>
-
-                <span class="intro__subtitle">salon</span>
-                <h1 class="intro__title">marelen</h1>
-            </div>
-        </section>
-
-        <section class="section section--padding">
-            <div class="container">
-                <h2 class="heading heading--header">co nabízíme</h2>
-                <div class="grid">
-                    <div class="bg bg--rect bg--center"></div>
-
-                    <article class="card-h card-h--2v3 card-h--big-space">
-                        <div class="card-h__header">
-                            <div class="sepia">
-                                <img src="/img/sluzba/kosmetika.jpg" alt="klasická kosmetika" class="card-h__img sepia__img">
-                            </div>
-                        </div>
-
-                        <div class="card-h__body">
-                            <h2 class="card-h__title">klasická kosmetika</h2>
-
-                            <p class="card-h__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis reiciendis voluptate, praesentium a dignissimos reprehenderit accusamus eligendi, eos vitae quae. Dolorem unde maxime et quae eaque dicta praesentium laboriosam?
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="card-h card-h--3v2 card-h--big-space card-h--rev">
-                        <div class="card-h__header">
-                            <div class="sepia">
-                                <img src="/img/sluzba/elektrokosmetika.jpg" alt="elektro kosmetika" class="card-h__img sepia__img">
-                            </div>
-                        </div>
-                        <div class="card-h__body">
-                            <h2 class="card-h__title">elektro kosmetika</h2>
-
-                            <p class="card-h__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis reiciendis voluptate, praesentium a dignissimos reprehenderit accusamus eligendi, eos vitae quae. Dolorem unde maxime et quae eaque dicta praesentium laboriosam?
-                            </p>
-
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="container text-center">
-                <a href="" class="button mt-8">všechny služby</a>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="about__img">
-
-                <div class="sepia mx-auto w-max-500">
-                    <img src="/img/kosmetika.jpg" alt="kosmetické prostředky" class="sepia__img img">
-                </div>
-            </div>
-            <div class="about__panel">
-
-                <div class="container text-center">
-
-                    <h2 class="heading heading__header about__title">o nás</h2>
-                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit quo exercitationem nihil voluptatibus totam possimus quae corporis quisquam ipsa quaerat fugiat minus odit dolore labore fuga nemo fugit aliquam?</p>
-                    <img src="/img/logo.svg" class="about__logo" alt="logo salon marelen">
-                </div>
-            </div>
-
-        </section>
-
-        <section class="section section--padding">
-            <div class="container">
-                <div class="sepia w-max-500">
-                    <img src="/img/rasenka.jpg" alt="řasenka" class="sepia__img mb-8">
-                </div>
-                <h2 class="heading heading--header">kontakt</h2>
-                <grid class="grid grid--123">
-                    <div>
-                        <h3 class="heading heading--title">salon marelen</h3>
-
-                        <p>
-                            Mírové náměstí 1583<br>(naproti Penny marketu)<br>Dobříš 263 01
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3 class="heading heading--title">kosmetika</h3>
-
-                        <p>
-                            Petra Soukup Ecklová, DiS<br> Tel.: 604 308 910<br>
-                            <a href="mailto:kosmetika@marelen.cz">
-                                kosmetika@marelen.cz
-                            </a>
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3 class="heading heading--title">kadeřnictví</h3>
-
-                        <p>
-                            Monika Krátká<br> Tel.: 606 275 379
-                            <a href="mailto:kadernictvi@marelen.cz">
-                                kadernictvi@marelen.cz
-                            </a>
-                        </p>
-                    </div>
-                </grid>
-
-            </div>
-        </section>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat autem delectus, vel hic laudantium praesentium magnam culpa repudiandae odio maxime quos, odit dolor, iure vero fugiat error nam recusandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat autem delectus, vel hic laudantium praesentium magnam culpa repudiandae odio maxime quos, odit dolor, iure vero fugiat error nam recusandae.</p>
+        </div>
     </main>
-    <footer class="footer">
-        <div class="footer__body">
-            <div class="container">
-                <div class="grid grid--13">
-                    <a href="/Index.html">
-                        <span class="footer__brand">marelen</span>
-                    </a>
 
-                    <ul class="footer__menu">
-                        <li class="footer__item"><a href="/Index.html" class="footer__link">home</a></li>
-                        <li class="footer__item"><a href="/Sluzby.html" class="footer__link">služby</a></li>
-                        <li class="footer__item"><a href="/Cenik.html" class="footer__link">ceník</a></li>
-                        <li class="footer__item"><a href="/Kontakt.html" class="footer__link">kontakt</a></li>
-                    </ul>
-
-                    <div>
-                        <a href="https://www.facebook.com">
-                            <img src="/img/ikona/facebook.svg" alt="facebook salon marelen" class="footer__icon">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer__design">
-            <a href="https://www.webovna.cz" class="footer__design-link" target="_BLANK">
-                2022 vyrobilo studio WEBOVNA
-            </a>
-        </div>
-    </footer>
-
-    <script async src="/js/main.js?v=20220131-01"></script>
+    <script src="/js/main.js"></script>
 
 </body>
 

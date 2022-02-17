@@ -3,38 +3,29 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Jsme malé rodinné truhlářství a stavíme pergoly, terasy, dřevěné fasády a vyrábíme interiérový nábytek. Kuchyně, ložnice, předsíně a vestavěné skříně">
+    <meta name="description" content="Jsme salon krásy s komplexními službami v oblasti kosmetiky, elektrokosmetiky, manikůry i kadeřnictví">
 
     <title>MARELEN - @ViewData["Title"]</title>
 
-    <link rel="stylesheet" href="/css/style.min.css?v=20220210-01" />
+    <link rel="stylesheet" href="/css/style.min.css?v=20220216-04" />
 </head>
-
+ 
 <body>
-    <header>
+    <header id="header" class="header">
         <nav class="nav">
             <div class="container">
                 <div class="nav__bar">
-                    <a href="/index.html">
-                        <img src="/img/logo.svg" alt="logo marelen" class="nav__brand">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="/img/logo.svg" alt="logo" class="nav__brand">
                     </a>
 
                     <img class="nav__hamb nav__icon" src="/img/ikona/hamburger.svg" alt="hamburger menu">
-                    <img class="nav__close nav__icon" src="/img/ikona/zavrit.svg" alt="zavřít menu">
 
                     <ul class="nav__menu">
-                        <li class="nav__item">
-                            <a class="nav__link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
+                        <li class="nav__item"><a asp-area="" asp-controller="Home" asp-action="Index" class="nav__link">home</a></li>
+                        <li class="nav__item"><a asp-area="" asp-controller="Home" asp-action="Sluzby" class="nav__link">služby</a></li>
+                        <li class="nav__item"><a asp-area="" asp-controller="Home" asp-action="Cenik" class="nav__link">ceník</a></li>
+                        <li class="nav__item"><a asp-area="" asp-controller="Home" asp-action="Kontakt" class="nav__link">kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,11 +36,41 @@
         @RenderBody()
     </main>
 
-
     <footer class="footer">
+        <div class="footer__body">
+            <div class="container">
+                <div class="grid grid--13">
+                    <div>
+                        <a class="footer__link" asp-area="" asp-controller="Home" asp-action="Index">
+                            <span class="footer__brand">marelen</span>
+                        </a>
+                    </div>
+
+                    <ul class="footer__menu">
+                        <li class="footer__item"><a asp-area="" asp-controller="Home" asp-action="Index" class="footer__link">home</a></li>
+                        <li class="footer__item"><a asp-area="" asp-controller="Home" asp-action="Sluzby" class="footer__link">služby</a></li>
+                        <li class="footer__item"><a asp-area="" asp-controller="Home" asp-action="Cenik" class="footer__link">ceník</a></li>
+                        <li class="footer__item"><a asp-area="" asp-controller="Home" asp-action="Kontakt" class="footer__link">kontakt</a></li>
+                    </ul>
+
+                    <div>
+                        <a class="footer__link" href="https://www.facebook.com/Marelen-salon-107077184561757/" target="_blank">
+                            <img src="/img/ikona/facebook.svg" alt="facebook salon marelen" class="footer__icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__design">
+            <a href="https://www.webovna.cz" class="footer__design-link" target="_BLANK">
+                2022 vyrobilo studio WEBOVNA
+            </a>
+        </div>
     </footer>
 
     <script src="~/js/main.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false);
 
 </body>

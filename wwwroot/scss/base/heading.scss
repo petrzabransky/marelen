@@ -1,14 +1,13 @@
 @import "../core/variable.scss";
 .heading {
-    display: block;
+    //display: block;
     position: relative;
     font-weight: normal;
     line-height: 1.4;
     color: $color-primary;
     text-transform: uppercase;
     margin-bottom: 1em;
-    letter-spacing: 0.5em;
-    color: $color-primary;
+    letter-spacing: 0.5em;    
     &--display {
         font-size: 3rem;
         margin-bottom: 3rem;

@@ -23,6 +23,21 @@ namespace Marelen.Controllers
             return View();
         }
 
+        public IActionResult Sluzby()
+        {
+            return View();
+        }
+
+        public IActionResult Cenik()
+        {
+            return View();
+        }
+
+        public IActionResult Kontakt()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

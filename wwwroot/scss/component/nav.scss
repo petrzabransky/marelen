@@ -1,80 +1,67 @@
-        @import "../core/variable.scss";
-        .nav {
-            $self: &;
-            width: 100%;
+@import "../core/variable.scss";
+.nav {
+    $self: &;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    background: $color-secondary;
+    &__bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__item {
+        padding: 32px 0;
+        text-align: center;
+    }
+    &__link {
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $color-primary;
+    }
+    &__icon {
+        height: 20px;
+    }
+    &__brand {
+        height: 18px;
+    }
+    &__menu {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        list-style: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: $color-secondary;
+        display: none;
+        padding-bottom: 32px;
+        &--active {
             display: flex;
-            align-items: center;
-            background: #fff;
-            height: 150px;
-            background: $color-secondary;
-            padding: 0 3%;
-            &__active {
-                transition: 300ms;
-                background: $color-secondary;
-            }
-            &__bar {
-                display: flex;
-                position: relative;
-                width: 100%;
-                flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                padding: 32px 0;
-            }
-            &__menu {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                flex-basis: 100%;
-                list-style: none;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                display: none;
-                padding-bottom: 16px;
-            }
-            &__item {
-                padding: 22px 0;
-                text-align: center;
-            }
-            &__link {
-                position: relative;
-                text-transform: uppercase;
-                font-size: 14px;
-                color: $color-primary;
-                letter-spacing: 0.2em;
-            }
-            &__icon {
-                height: 20px;
-            }
-            &__active-link {
-                font-weight: bold;
-            }
-            &__brand {
-                height: 18px;
-            }
-            &__close {
-                display: none;
-            }
-            @media(min-width: $breakpoint-laptop) {
-                &__bar {
-                    justify-content: space-between;
-                }
-                &__menu {
-                    display: flex;
-                    flex-direction: row;
-                    flex-basis: initial;
-                    max-height: 500px;
-                    padding-bottom: 0;
-                }
-                &__hamb,
-                &__close {
-                    display: none;
-                }
-                &__item {
-                    padding-left: 64px;
-                }
-            }
         }
+    }
+    @media(min-width: $breakpoint-laptop) {
+        &__bar {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__menu {
+            position: relative;
+            top: initial;
+            left: initial;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 0;
+        }
+        &__hamb,
+        &__close {
+            display: none;
+        }
+    }
+}
