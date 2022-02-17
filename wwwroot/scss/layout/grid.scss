@@ -8,6 +8,7 @@
     grid-template-columns: 1fr;
     &--12 {
         grid-template-columns: 1fr;
+        grid-gap: 128px;
         @media(min-width: $breakpoint-tablet) {
             grid-template-columns: 1fr 1fr;
         }

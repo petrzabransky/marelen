@@ -69,36 +69,31 @@ table {
   font-style: italic;
   color: #999; }
 
-.heading, .footer__brand, .intro__title, .intro__subtitle, .card-h__title {
+.heading, .footer__brand, .card__title, .card-h__title {
   position: relative;
   font-weight: normal;
   line-height: 1.4;
   color: #513a2a;
   text-transform: uppercase;
-  margin-bottom: 1em;
-  letter-spacing: 0.5em; }
+  letter-spacing: 0.1em;
+  margin-bottom: 1em; }
   .heading--display {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    color: #999; }
-    @media (min-width: 768px) {
-      .heading--display {
-        font-size: 5rem;
-        margin-bottom: 5rem; } }
+    font-size: 1.8rem;
+    margin-bottom: 8rem; }
   .heading--header {
     position: relative;
-    font-size: 2.3rem;
-    margin-bottom: 3em;
-    letter-spacing: 0.2em; }
-  .heading--title, .footer__brand, .card-h__title {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em; }
-  .heading--subtitle {
-    letter-spacing: 0;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #666; }
+    font-size: 1.3rem;
+    margin-bottom: 5rem; }
+  .heading--title, .footer__brand, .card__title, .card-h__title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem; }
+  @media (min-width: 768px) {
+    .heading--display {
+      font-size: 2.3rem;
+      margin-bottom: 8rem; }
+    .heading--header {
+      font-size: 1.7rem;
+      margin-bottom: 5rem; } }
 
 .table {
   border: 1px solid white;
@@ -150,36 +145,31 @@ table {
   width: 100%;
   z-index: 9999; }
 
-.heading, .footer__brand, .intro__title, .intro__subtitle, .card-h__title {
+.heading, .footer__brand, .card__title, .card-h__title {
   position: relative;
   font-weight: normal;
   line-height: 1.4;
   color: #513a2a;
   text-transform: uppercase;
-  margin-bottom: 1em;
-  letter-spacing: 0.5em; }
+  letter-spacing: 0.1em;
+  margin-bottom: 1em; }
   .heading--display {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    color: #999; }
-    @media (min-width: 768px) {
-      .heading--display {
-        font-size: 5rem;
-        margin-bottom: 5rem; } }
+    font-size: 1.8rem;
+    margin-bottom: 8rem; }
   .heading--header {
     position: relative;
-    font-size: 2.3rem;
-    margin-bottom: 3em;
-    letter-spacing: 0.2em; }
-  .heading--title, .footer__brand, .card-h__title {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em; }
-  .heading--subtitle {
-    letter-spacing: 0;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #666; }
+    font-size: 1.3rem;
+    margin-bottom: 5rem; }
+  .heading--title, .footer__brand, .card__title, .card-h__title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem; }
+  @media (min-width: 768px) {
+    .heading--display {
+      font-size: 2.3rem;
+      margin-bottom: 8rem; }
+    .heading--header {
+      font-size: 1.7rem;
+      margin-bottom: 5rem; } }
 
 .footer {
   width: 100%; }
@@ -253,7 +243,8 @@ table {
   margin: 0 auto;
   grid-template-columns: 1fr; }
   .grid--12 {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-gap: 128px; }
     @media (min-width: 768px) {
       .grid--12 {
         grid-template-columns: 1fr 1fr; } }
@@ -271,36 +262,31 @@ table {
       .grid--123 {
         grid-template-columns: 1fr 1fr 1fr; } }
 
-.heading, .footer__brand, .intro__title, .intro__subtitle, .card-h__title {
+.heading, .footer__brand, .card__title, .card-h__title {
   position: relative;
   font-weight: normal;
   line-height: 1.4;
   color: #513a2a;
   text-transform: uppercase;
-  margin-bottom: 1em;
-  letter-spacing: 0.5em; }
+  letter-spacing: 0.1em;
+  margin-bottom: 1em; }
   .heading--display {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    color: #999; }
-    @media (min-width: 768px) {
-      .heading--display {
-        font-size: 5rem;
-        margin-bottom: 5rem; } }
+    font-size: 1.8rem;
+    margin-bottom: 8rem; }
   .heading--header {
     position: relative;
-    font-size: 2.3rem;
-    margin-bottom: 3em;
-    letter-spacing: 0.2em; }
-  .heading--title, .footer__brand, .card-h__title {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em; }
-  .heading--subtitle {
-    letter-spacing: 0;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #666; }
+    font-size: 1.3rem;
+    margin-bottom: 5rem; }
+  .heading--title, .footer__brand, .card__title, .card-h__title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem; }
+  @media (min-width: 768px) {
+    .heading--display {
+      font-size: 2.3rem;
+      margin-bottom: 8rem; }
+    .heading--header {
+      font-size: 1.7rem;
+      margin-bottom: 5rem; } }
 
 .intro {
   position: relative;
@@ -310,37 +296,47 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(/img/hoblina.jpg) no-repeat center bottom;
-  background-size: cover;
   text-align: center; }
   .intro__top {
-    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15%;
     width: 100%;
     background: #f1efe7; }
   .intro__panel {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 50px; }
   .intro__picture {
-    width: 453px;
-    margin-bottom: 120px; }
+    width: 70%; }
   .intro__title {
-    font-size: 70px;
-    font-weight: normal;
-    margin-bottom: 1rem;
-    transform: translateX(0.25em); }
-    @media (min-width: 992px) {
-      .intro__title {
-        font-size: 5rem; } }
-  .intro__subtitle {
-    font-size: 20px;
-    font-weight: normal;
-    margin-bottom: 60px;
+    color: #513a2a;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    line-height: 1.4;
     letter-spacing: 0.5em;
+    font-weight: normal;
     transform: translateX(0.25em); }
-    @media (min-width: 992px) {
-      .intro__subtitle {
-        font-size: 1.5rem; } }
+  .intro__subtitle {
+    color: #513a2a;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    letter-spacing: 1em;
+    font-weight: normal;
+    transform: translateX(0.25em);
+    margin-bottom: 2rem; }
+  @media (min-width: 450px) {
+    .intro__title {
+      font-size: 2rem; }
+    .intro__subtitle {
+      font-size: 1rem; } }
+  @media (min-width: 768px) {
+    .intro__title {
+      font-size: 3rem;
+      letter-spacing: 0.8em; } }
 
 .nav {
   display: flex;
@@ -357,7 +353,7 @@ table {
     padding: 32px 0;
     text-align: center; }
   .nav__link {
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #513a2a; }
@@ -396,16 +392,17 @@ table {
       display: none; } }
 
 .button {
+  display: inline-block;
   color: #ffffff;
   background: #666;
   font-weight: bold;
   padding: 8px 32px;
-  display: inline-block;
   text-transform: uppercase;
   font-size: 0.8rem;
   text-align: center;
   border-radius: 4px;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  margin-top: 2rem; }
   .button:hover {
     opacity: 0.5; }
 
@@ -413,36 +410,71 @@ table {
   font-weight: bold;
   display: inline-block; }
 
-.heading, .footer__brand, .intro__title, .intro__subtitle, .card-h__title {
+.heading, .footer__brand, .card__title, .card-h__title {
   position: relative;
   font-weight: normal;
   line-height: 1.4;
   color: #513a2a;
   text-transform: uppercase;
-  margin-bottom: 1em;
-  letter-spacing: 0.5em; }
+  letter-spacing: 0.1em;
+  margin-bottom: 1em; }
   .heading--display {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    color: #999; }
-    @media (min-width: 768px) {
-      .heading--display {
-        font-size: 5rem;
-        margin-bottom: 5rem; } }
+    font-size: 1.8rem;
+    margin-bottom: 8rem; }
   .heading--header {
     position: relative;
-    font-size: 2.3rem;
-    margin-bottom: 3em;
-    letter-spacing: 0.2em; }
-  .heading--title, .footer__brand, .card-h__title {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em; }
-  .heading--subtitle {
-    letter-spacing: 0;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #666; }
+    font-size: 1.3rem;
+    margin-bottom: 5rem; }
+  .heading--title, .footer__brand, .card__title, .card-h__title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem; }
+  @media (min-width: 768px) {
+    .heading--display {
+      font-size: 2.3rem;
+      margin-bottom: 8rem; }
+    .heading--header {
+      font-size: 1.7rem;
+      margin-bottom: 5rem; } }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .card__header {
+    margin-bottom: 32px; }
+  .card__body {
+    flex: 1 1 auto;
+    margin-bottom: 32px; }
+  .card__img {
+    margin-bottom: 1rem; }
+  .card--service .card__text {
+    max-width: 450px; }
+
+.heading, .footer__brand, .card__title, .card-h__title {
+  position: relative;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #513a2a;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1em; }
+  .heading--display {
+    font-size: 1.8rem;
+    margin-bottom: 8rem; }
+  .heading--header {
+    position: relative;
+    font-size: 1.3rem;
+    margin-bottom: 5rem; }
+  .heading--title, .footer__brand, .card__title, .card-h__title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem; }
+  @media (min-width: 768px) {
+    .heading--display {
+      font-size: 2.3rem;
+      margin-bottom: 8rem; }
+    .heading--header {
+      font-size: 1.7rem;
+      margin-bottom: 5rem; } }
 
 .card-h {
   width: 100%;
@@ -476,36 +508,16 @@ table {
     .card-h--rev .card-h__body {
       order: 0; } }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 300px;
-  overflow: hidden; }
-  .card__header {
-    margin-bottom: 32px; }
-  .card__body {
-    flex: 1 1 auto;
-    margin-bottom: 32px; }
-  .card__img {
-    margin-bottom: 1rem; }
-  .card__display {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1;
-    margin-bottom: 2rem; }
-
 .sepia {
   background: #f1efe7;
   width: 100%;
-  max-width: 500px;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.144); }
+  max-width: 450px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.144);
+  margin-bottom: 3rem; }
   .sepia__img {
     width: 100%;
     object-fit: cover;
     mix-blend-mode: luminosity; }
-  .sepia--title {
-    box-shadow: none; }
 
 .about__panel {
   background: #f1efe7;
@@ -613,11 +625,11 @@ table {
   .bg--rect {
     background: #f1efe7;
     width: 50%;
-    height: 100%;
+    height: calc(100% - 300px);
     top: 0;
-    transform: translate(-50%, 80px);
+    transform: translate(-50%, 150px);
     display: none; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .bg--rect {
         display: block; } }
 

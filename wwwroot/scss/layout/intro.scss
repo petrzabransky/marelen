@@ -1,6 +1,5 @@
 @import "../core/variable.scss";
 @import "../base/heading.scss";
-
 .intro {
     position: relative;
     width: 100vw;
@@ -9,49 +8,55 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(/img/hoblina.jpg) no-repeat center bottom;
-    background-size: cover;
     text-align: center;
-
     &__top {
-        height: 250px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15%;
         width: 100%;
         background: $color-secondary;
     }
-
     &__panel {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 50px;
     }
-
     &__picture {
-        width: 453px;
-        margin-bottom: 120px;
+        width: 70%;
     }
-
     &__title {
-        @extend .heading;
-        font-size: 70px;
+        color: $color-primary;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        line-height: 1.4;
+        letter-spacing: 0.5em;
         font-weight: normal;
-        margin-bottom: 1rem;
         transform: translateX(0.25em);
-
-        @media(min-width: $breakpoint-laptop) {
-            font-size: 5rem;
+    }
+    &__subtitle {
+        color: $color-primary;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        line-height: 1.4;
+        letter-spacing: 1em;
+        font-weight: normal;
+        transform: translateX(0.25em);
+        margin-bottom: 2rem;
+    }
+    @media(min-width: $breakpoint-mobile) {
+        &__title {
+            font-size: 2rem;
+        }
+        &__subtitle {
+            font-size: 1rem;
         }
     }
-
-    &__subtitle {
-        @extend .heading;
-        font-size: 20px;
-        font-weight: normal;
-        margin-bottom: 60px;
-        letter-spacing: 0.5em;
-        transform: translateX(0.25em);
-
-        @media(min-width: $breakpoint-laptop) {
-            font-size: 1.5rem;
+    @media(min-width: $breakpoint-tablet) {
+        &__title {
+            font-size: 3rem;
+            letter-spacing: 0.8em;
         }
     }
 }

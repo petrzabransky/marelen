@@ -1,10 +1,10 @@
 @import "../core/variable.scss";
+@import "../base/heading.scss";
 .card {
+    $self: &;
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 300px;
-    overflow: hidden;
     &__header {
         margin-bottom: 32px;
     }
@@ -12,13 +12,16 @@
         flex: 1 1 auto;
         margin-bottom: 32px;
     }
+    &__title {
+        @extend .heading;
+        @extend .heading--title;
+    }
     &__img {
         margin-bottom: 1rem;
     }
-    &__display {
-        font-size: 48px;
-        font-weight: bold;
-        line-height: 1;
-        margin-bottom: 2rem;
+    &--service {
+        #{$self}__text {
+            max-width: 450px;
+        }
     }
 }

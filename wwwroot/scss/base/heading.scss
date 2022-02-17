@@ -1,37 +1,33 @@
 @import "../core/variable.scss";
 .heading {
-    //display: block;
     position: relative;
     font-weight: normal;
     line-height: 1.4;
     color: $color-primary;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
     margin-bottom: 1em;
-    letter-spacing: 0.5em;    
     &--display {
-        font-size: 3rem;
-        margin-bottom: 3rem;
-        color: $color-medium;
-        @media(min-width: $breakpoint-tablet) {
-            font-size: 5rem;
-            margin-bottom: 5rem;
-        }
+        font-size: 1.8rem;
+        margin-bottom: 8rem;
     }
     &--header {
         position: relative;
-        font-size: 2.3rem;
-        margin-bottom: 3em;
-        letter-spacing: 0.2em;
+        font-size: 1.3rem;
+        margin-bottom: 5rem;
     }
     &--title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-bottom: 1rem;
-        letter-spacing: 0.1em;
     }
-    &--subtitle {
-        letter-spacing: 0;
-        font-size: 1rem;
-        margin-bottom: 1rem;
-        color: $color-dark;
+    @media(min-width: $breakpoint-tablet) {
+        &--display {
+            font-size: 2.3rem;
+            margin-bottom: 8rem;
+        }
+        &--header {
+            font-size: 1.7rem;
+            margin-bottom: 5rem;
+        }
     }
 }

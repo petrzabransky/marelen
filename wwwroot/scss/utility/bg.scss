@@ -12,11 +12,12 @@
     &--rect {
         background: $color-secondary;
         width: 50%;
-        height: 100%;
+        height: calc(100% - 300px);
         top: 0;
-        transform: translate(-50%, 80px);
+        transform: translate(-50%, 150px);
         display: none;
-        @media(min-width: $breakpoint-laptop) {
+        opacity: 0.6;
+        @media(min-width: $breakpoint-tablet) {
             display: block;
         }
     }
