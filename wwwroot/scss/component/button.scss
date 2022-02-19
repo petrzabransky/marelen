@@ -2,14 +2,14 @@
 .button {
     display: inline-block;
     color: $color-white;
-    background: $color-dark;
+    background: $color-primary;
     font-weight: bold;
     padding: 8px 32px;
     text-transform: uppercase;
     font-size: 0.8rem;
     text-align: center;
     border-radius: 4px;
-    letter-spacing: 0.1em;   
+    letter-spacing: 0.1em;
     &:hover {
         opacity: 0.5;
     }
