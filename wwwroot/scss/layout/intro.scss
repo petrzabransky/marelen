@@ -25,6 +25,7 @@
     }
     &__picture {
         width: 70%;
+        margin-bottom: 3rem;
     }
     &__title {
         color: $color-primary;
@@ -43,7 +44,7 @@
         letter-spacing: 1em;
         font-weight: bold;
         transform: translateX(0.25em);
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
     @media(min-width: $breakpoint-mobile) {
         &__title {
