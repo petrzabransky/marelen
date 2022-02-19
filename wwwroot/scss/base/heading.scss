@@ -2,19 +2,19 @@
 .heading {
     position: relative;
     font-weight: normal;
-    line-height: 1.4;
+    line-height: 1.6;
     color: $color-primary;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 1em;
     &--display {
         font-size: 1.8rem;
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
     }
     &--header {
         position: relative;
         font-size: 1.3rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     &--title {
         font-size: 1.1rem;
@@ -23,7 +23,7 @@
     @media(min-width: $breakpoint-tablet) {
         &--display {
             font-size: 2.3rem;
-            margin-bottom: 8rem;
+            margin-bottom: 6rem;
         }
         &--header {
             font-size: 1.7rem;

@@ -1,4 +1,5 @@
 @import "../core/variable.scss";
+
 .grid {
     width: 100%;
     display: grid;
@@ -6,26 +7,46 @@
     grid-gap: 5rem 16px;
     margin: 0 auto;
     grid-template-columns: 1fr;
+
     &--12 {
         grid-template-columns: 1fr;
         grid-gap: 128px;
+
         @media(min-width: $breakpoint-tablet) {
             grid-template-columns: 1fr 1fr;
         }
     }
+
     &--13 {
         grid-template-columns: 1fr;
+
         @media(min-width: $breakpoint-tablet) {
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
+
     &--123 {
         grid-template-columns: 1fr;
+
         @media(min-width: $breakpoint-tablet) {
             grid-template-columns: 1fr 1fr;
         }
+
         @media(min-width: $breakpoint-desktop) {
             grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    &--2v3 {
+        grid-template-columns: 1fr;
+        grid-gap: 48px 64px;
+
+        @media(min-width: $breakpoint-tablet) {
+            grid-template-columns: 2fr 3fr;
+        }
+
+        @media(min-width: $breakpoint-laptop) {
+            grid-gap: 48px 128px;
         }
     }
 }

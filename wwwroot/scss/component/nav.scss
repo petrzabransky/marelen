@@ -21,6 +21,7 @@
         letter-spacing: 0.2em;
         text-transform: uppercase;
         color: $color-primary;
+        font-weight: bold;
     }
     &__icon {
         height: 20px;
@@ -54,7 +55,7 @@
             position: relative;
             top: initial;
             left: initial;
-            width: 80%;
+            width: 60%;
             display: flex;
             flex-direction: row;
             padding-bottom: 0;
