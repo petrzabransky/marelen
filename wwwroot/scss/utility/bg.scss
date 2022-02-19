@@ -1,34 +1,12 @@
-@import "../core/variable.scss";
-.bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -999;
-
-    &--center {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    &--rect {
-        background: $color-secondary;
-        width: 50%;
-        height: calc(100% - 150px);
-        transform: translate(-50%, 80px);
-        top: 0;
-        display: none;
-        opacity: 0.6;
-
-        @media(min-width: $breakpoint-tablet) {
-            display: block;
-           
+        @import "../core/variable.scss";
+        .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -999;
+            &--center {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
-
-        @media(min-width: $breakpoint-laptop) {
-            display: block;
-            height: calc(100% - 300px);
-            transform: translate(-50%, 150px);
-        }
-    }
-}
