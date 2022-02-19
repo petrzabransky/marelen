@@ -1,11 +1,11 @@
 @import "../core/variable.scss";
 .heading {
     position: relative;
-    font-weight: normal;
-    line-height: 1.6;
-    color: $color-primary;
     text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.6;
     letter-spacing: 0.1em;
+    color: $color-primary;
     margin-bottom: 1em;
     &--display {
         font-size: 1.8rem;

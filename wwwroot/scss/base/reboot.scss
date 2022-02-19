@@ -9,7 +9,7 @@
 
 html {
     font-family: font-primary;
-    line-height: 2;
+    line-height: 1.8;
     font-size: 16px;
     letter-spacing: 0.05em;
     @media (min-width: $breakpoint-desktop) {
@@ -19,7 +19,7 @@ html {
 
 body {
     background: $color-white;
-    color: $color-medium;
+    color: $color-primary-medium;
     overflow-x: hidden;
 }
 
@@ -58,6 +58,7 @@ small {
 a {
     text-decoration: none;
     color: $color-primary;
+    font-weight: bold;
     &:hover {
         opacity: 0.5;
     }
