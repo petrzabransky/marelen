@@ -11,7 +11,7 @@
 
 html {
   font-family: font-primary;
-  line-height: 2;
+  line-height: 1.8;
   font-size: 16px;
   letter-spacing: 0.05em; }
   @media (min-width: 1200px) {
@@ -20,7 +20,7 @@ html {
 
 body {
   background: #ffffff;
-  color: #999;
+  color: #73523b;
   overflow-x: hidden; }
 
 header,
@@ -50,7 +50,8 @@ small {
 
 a {
   text-decoration: none;
-  color: #513a2a; }
+  color: #513a2a;
+  font-weight: bold; }
   a:hover {
     opacity: 0.5; }
 
@@ -70,11 +71,11 @@ table {
 
 .heading, .footer__brand, .card__title, .card-h__title {
   position: relative;
-  font-weight: normal;
-  line-height: 1.6;
-  color: #513a2a;
   text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.6;
   letter-spacing: 0.1em;
+  color: #513a2a;
   margin-bottom: 1em; }
   .heading--display {
     font-size: 1.8rem;
@@ -149,11 +150,11 @@ table {
 
 .heading, .footer__brand, .card__title, .card-h__title {
   position: relative;
-  font-weight: normal;
-  line-height: 1.6;
-  color: #513a2a;
   text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.6;
   letter-spacing: 0.1em;
+  color: #513a2a;
   margin-bottom: 1em; }
   .heading--display {
     font-size: 1.8rem;
@@ -275,11 +276,11 @@ table {
 
 .heading, .footer__brand, .card__title, .card-h__title {
   position: relative;
-  font-weight: normal;
-  line-height: 1.6;
-  color: #513a2a;
   text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.6;
   letter-spacing: 0.1em;
+  color: #513a2a;
   margin-bottom: 1em; }
   .heading--display {
     font-size: 1.8rem;
@@ -321,14 +322,15 @@ table {
     align-items: center;
     margin-top: 50px; }
   .intro__picture {
-    width: 70%; }
+    width: 70%;
+    margin-bottom: 3rem; }
   .intro__title {
     color: #513a2a;
     text-transform: uppercase;
     font-size: 1.7rem;
     line-height: 1.4;
     letter-spacing: 0.5em;
-    font-weight: normal;
+    font-weight: bold;
     transform: translateX(0.25em); }
   .intro__subtitle {
     color: #513a2a;
@@ -336,9 +338,9 @@ table {
     font-size: 0.8rem;
     line-height: 1.4;
     letter-spacing: 1em;
-    font-weight: normal;
+    font-weight: bold;
     transform: translateX(0.25em);
-    margin-bottom: 2rem; }
+    margin-bottom: 3rem; }
   @media (min-width: 450px) {
     .intro__title {
       font-size: 2rem; }
@@ -423,11 +425,11 @@ table {
 
 .heading, .footer__brand, .card__title, .card-h__title {
   position: relative;
-  font-weight: normal;
-  line-height: 1.6;
-  color: #513a2a;
   text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.6;
   letter-spacing: 0.1em;
+  color: #513a2a;
   margin-bottom: 1em; }
   .heading--display {
     font-size: 1.8rem;
@@ -463,11 +465,11 @@ table {
 
 .heading, .footer__brand, .card__title, .card-h__title {
   position: relative;
-  font-weight: normal;
-  line-height: 1.6;
-  color: #513a2a;
   text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.6;
   letter-spacing: 0.1em;
+  color: #513a2a;
   margin-bottom: 1em; }
   .heading--display {
     font-size: 1.8rem;
@@ -525,8 +527,7 @@ table {
 .sepia {
   background: #f1efe7;
   width: 100%;
-  max-width: 450px;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.144); }
+  max-width: 450px; }
   .sepia__img {
     width: 100%;
     object-fit: cover;
@@ -548,7 +549,8 @@ table {
 .about__text {
   color: #513a2a;
   opacity: 0.8;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  line-height: 2; }
 
 .about__title {
   margin-bottom: 5rem; }
@@ -635,22 +637,6 @@ table {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .bg--rect {
-    background: #f1efe7;
-    width: 50%;
-    height: calc(100% - 150px);
-    transform: translate(-50%, 80px);
-    top: 0;
-    display: none;
-    opacity: 0.6; }
-    @media (min-width: 768px) {
-      .bg--rect {
-        display: block; } }
-    @media (min-width: 992px) {
-      .bg--rect {
-        display: block;
-        height: calc(100% - 300px);
-        transform: translate(-50%, 150px); } }
 
 .color--white {
   color: #ffffff !important; }
