@@ -38,76 +38,9 @@ namespace Marelen.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+       
 
-        // Services - Clasic cosmetic
-
-        public IActionResult Kosmetika()
-        {
-            return View();
-        }
-
-        public IActionResult Masaz()
-        {
-            return View();
-        }
-
-        public IActionResult Peeling()
-        {
-            return View();
-        }
-
-        public IActionResult Depilace()
-        {
-            return View();
-        }
-
-        // Services - Electro cosmetic
-
-        public IActionResult Hyaluronic()
-        {
-            return View();
-        }
-
-        public IActionResult Elektrokosmetika()
-        {
-            return View();
-        }
-
-        public IActionResult Mikrodermabraze()
-        {
-            return View();
-        }
-
-        public IActionResult Elektrolifting()
-        {
-            return View();
-        }
-
-        public IActionResult Lasocare()
-        {
-            return View();
-        }
-
-        public IActionResult Spachtle()
-        {
-            return View();
-        }
-
-        public IActionResult Microneedling()
-        {
-            return View();
-        }
-
-        // Services - Other
-
-        public IActionResult Darek()
-        {
-            return View();
-        }
+        
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
