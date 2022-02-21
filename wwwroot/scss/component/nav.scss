@@ -25,6 +25,9 @@
     }
     &__icon {
         height: 20px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     &__brand {
         height: 18px;
