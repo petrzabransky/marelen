@@ -24,6 +24,7 @@ namespace Marelen
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddRouting(options => options.LowercaseUrls = true);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,11 +47,23 @@ namespace Marelen
 
             app.UseAuthorization();
 
+
             app.UseEndpoints(endpoints =>
             {
+               
+                
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{action=Index}",
+                defaults: new { controller = "Home"});
+
+                endpoints.MapControllerRoute(
+                   name: "service",
+                   pattern: "{controller=Sluzby}/{action}",
+               defaults: new { controller = "Sluzby" });
+
+
+
             });
         }
     }
