@@ -1,6 +1,10 @@
-wwwroot/css/
-wwwroot/img/
-wwwroot/*.html
+/wwwroot/css/
+/wwwroot/img/
+/wwwroot/*.html
+
+
+
+
 
 
 ## Ignore Visual Studio temporary files, build results, and
