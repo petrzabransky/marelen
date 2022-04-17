@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Views\test\" />
+    <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\img\sluzba\detail\" />
     <Folder Include="wwwroot\js\" />
   </ItemGroup>
