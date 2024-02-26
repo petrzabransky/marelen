@@ -37,6 +37,11 @@ namespace Marelen.Controllers
             return View();
         }
 
+        public IActionResult Oxyceutical()
+        {
+            return View();
+        }
+
         public IActionResult Elektrokosmetika()
         {
             return View();
